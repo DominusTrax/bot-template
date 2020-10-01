@@ -1,0 +1,21 @@
+--  Derpy's Bot Template --
+
+Made by DominusTrax on Github.
+
+Hello! Welcome to Derpy's Bot Template, down below will be some information that will be important for you to know
+and how to properly run the bot. I won't be giving you information on how to host the bot, hosting will be for you to find.
+
+
+Important:
+1st. Go to config.json and edit the fields
+2nd 1/2. You can add commands by adding a file with the name of the command and adding .js to it Ex. "help.js", "ban.js", "kick.js", etc.
+2nd 2/2. If you need help with how to add a command there will be a tutorial on the github page.
+
+
+
+Need some help with discord.js, well below I have some good sources to get you started!
+https://discordjs.guide/ -- Coding in Discord.JS
+https://anidiots.guide/ -- Coding in Discord.JS/Hosting/Setting Up Your Bot
+https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/getting-started/getting-started-long-version.md -- Almost everything you need but very long
+
+If you need anymore help please just watch youtube tutorials and dont bug me, although let me know if there are errors...not errors from your commands.
