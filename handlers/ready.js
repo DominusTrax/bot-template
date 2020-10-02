@@ -1,4 +1,4 @@
-import config from ("../config.json");
+const config = require("../config.json")
 
 // Login and Set Status
 // Config from config.json

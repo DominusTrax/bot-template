@@ -1,7 +1,7 @@
-import { MessageEmbed } from "discord.js";
+const discord = require("discord.js");
 
-export async function run(bot, message, args) {
-  const Embed = new MessageEmbed()
+module.exports.run = async (bot, message, args) => {
+  const Embed = new discord.MessageEmbed()
   .setTitle('Commands')
   .setColor('BLUE')
   .addFields(
@@ -15,7 +15,7 @@ export async function run(bot, message, args) {
   message.channel.send(Embed);
 }
 
-export const cmds = {
+module.exports.help = {
   name: "help",
   aliases: []
 }

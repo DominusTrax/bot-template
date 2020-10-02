@@ -1,12 +1,12 @@
-import express from 'express';
+var express = require('express');
 var app = express()
-import { json } from 'body-parser';
-import discord, { Client, Collection } from "discord.js";
-import { ready as _ready } from "./handlers/ready.js";
-import { message as _message } from "./handlers/message.js";
-import config from "./config.json";
-import utils from "./global/utils.js";
-import { Database } from "sqlite3";
+var bodyParser = require('body-parser');
+const discord = require('discord.js');
+const ready = require("./handlers/ready");
+const message = require("./handlers/message");
+const config = require("./settings/config.json");
+const utils = require("./global/utils");
+var sqlite3 = require("sqlite3");
 const bot = new Client();
 app.use(json())
 require("./global/functions.js")(bot, utils, config);
@@ -17,8 +17,8 @@ var db = new Database("./database.db");
 // Gets Everything Ready
 bot.commands = new Collection();
 bot.aliases = new Collection();
-_ready(bot);
-_message(bot, utils, config, discord);
+ready.ready(bot);
+message.message(bot, utils, config, discord);
 
 // Port Listening
 var listener = app.listen(`3000`, function () {
