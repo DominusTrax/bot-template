@@ -2,7 +2,7 @@ import { MessageEmbed } from "discord.js";
 
 export async function run(bot, message, args) {
   const Embed = new MessageEmbed()
-  .setTitle('Outcast Studios')
+  .setTitle('Commands')
   .setColor('BLUE')
   .addFields(
     { name: 'Command Here', value: 'Information of the Command' },
