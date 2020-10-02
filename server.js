@@ -8,7 +8,8 @@ const config = require("./config.json");
 const utils = require("./global/utils");
 var sqlite3 = require("sqlite3");
 const bot = new discord.Client();
-app.use(json())
+app.use(bodyParser.json());
+const fs = require("fs");
 require("./global/functions.js")(bot, utils, config);
 
 // Makes the database
