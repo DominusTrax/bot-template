@@ -13,7 +13,7 @@ const fs = require("fs");
 require("./global/functions.js")(bot, utils, config);
 
 // Makes the database
-var db = new Database("./database.db");
+var db = new sqlite3.Database("./database.db");
 
 // Gets Everything Ready
 bot.commands = new Collection();
