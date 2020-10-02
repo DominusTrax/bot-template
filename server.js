@@ -7,7 +7,7 @@ const message = require("./handlers/message");
 const config = require("./config.json");
 const utils = require("./global/utils");
 var sqlite3 = require("sqlite3");
-const bot = new Client();
+const bot = new discord.Client();
 app.use(json())
 require("./global/functions.js")(bot, utils, config);
 
