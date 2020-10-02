@@ -4,7 +4,7 @@ import { json } from 'body-parser';
 import discord, { Client, Collection } from "discord.js";
 import { ready as _ready } from "./handlers/ready.js";
 import { message as _message } from "./handlers/message.js";
-import config from "./settings/config.json";
+import config from "./config.json";
 import utils from "./global/utils.js";
 import { Database } from "sqlite3";
 const bot = new Client();
