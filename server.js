@@ -16,8 +16,8 @@ require("./global/functions.js")(bot, utils, config);
 var db = new sqlite3.Database("./database.db");
 
 // Gets Everything Ready
-bot.commands = new Collection();
-bot.aliases = new Collection();
+bot.commands = new discord.Collection();
+bot.aliases = new discord.Collection();
 ready.ready(bot);
 message.message(bot, utils, config, discord);
 
